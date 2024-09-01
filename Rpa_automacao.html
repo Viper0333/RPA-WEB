@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPA WEB</title>
+    <link rel="stylesheet" href="./main2.css"> <!--Para usar esta tag basta escrever link e dar enter e selecionar -->
+    
+<!--Inicio Fonte do titulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+<!--Fim-->
+
+</head>
+<body>
+
+<!----------------------- configuração da imagem de fundo --------------------------------------->
+    <style>
+        body {
+            background-image: url('Imagens/ImagemFundo.png');
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center; /* Centraliza a imagem no container */
+        }
+    </style>
+
+<!-------------------------- Cria o cabeçalho---------------------------------------------------->
+    <header>
+        <div class="container">
+            <h1>RPA WEB</h1>
+            <nav> <!--Cria o menu-->
+                <ul> <!--Listagem de links nao ordenado-->
+                    <li> <!--Listagem de links nao ordenado-->
+                        <a href="#about">Sobre a loja</a> <!--se nao rem o link coloca #-->
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!------------------------------- Seção ----------------------------------------->
+    <section id="about">
+        <div class="container">
+            <div class="display-left">
+                <div class="store-front-container">
+                    <img src="Imagens/ambiente rpa.jpg" alt="foto do ambiente rpa">
+                </div>
+                <div class="btn-container">
+                    <div onclick="abrirModal()" class="btn">Solicitar Automação Rpa</div>
+                </div>
+            </div>
+    
+            <div class="display-higth">
+                <div>
+                    <h2>Nossos Serviços </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae odit, velit amet impedit reiciendis assumenda delectus, hic aliquam voluptas molestiae ex, harum animi quis dolores incidunt dolore quod! Ipsa.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore veritatis possimus saepe non illum minus ipsa fugiat, molestiae quisquam tempora dolorem velit deserunt nulla placeat assumenda dignissimos excepturi in!
+                    </p>
+                    <li>Automation anywhere</li>
+                    <li>Python</li>
+                    <li>Power Automate</li>
+                    <li>Uipath</li>
+                    
+                    <ul class="social-links" id="asd">
+                        <div>
+                            <h3>Nos acompanhe</h3>
+                            <li>
+                                <a href="#" title="Siga-nos no Instagran">
+                                    <img src="./Imagens/instagram.png" alt="Logo do instagran" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga-nos no Facebook">
+                                    <img src="./Imagens/whatsapp.png" alt="Logo do Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Visite nosso canal no Youttube">
+                                    <img src="./Imagens/linkedin.png" alt="Logo do youtube" />
+                                </a>
+                            </li>
+                        </div>
+                        <div class="address">
+                            <h3>Venha ate nós</h3>
+                            <p>
+                                Rua Maria Aparecida 55, Bom Jesus Contagem
+                            </p>
+                        </div>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-----------------------------------Botao de cadastro------------------------------------------------->
+    
+    <div class="Janela_modal" id="Janela_modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h3>Formulário de Automação</h3>
+                <form>
+                    <input type="text" placeholder="Seu nome" required /> <!-- required vai mostrar os campos que sao obrigatórios-->
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <input type="tel" placeholder="Seu telefone de contato"/>
+                    <textarea placeholder="Descreva sua necessidade de automação" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+    </div>
+
+        <script src="script.js"></script> <!--aperta ctrl e clica em script.js-->
+    
+<!------------------------------------ Cria o Rodope --------------------------------------------------->
+    <footer>
+        <div class="container">
+                <li>
+                    &copy; RPA WEB - Todos direitos reservados - 2024    
+                </li>
+                <li> <!--Listagem de links nao ordenado-->
+                    <a href="#about">Termos de serviço</a> <!--se nao tem o link coloca #-->
+                </li>
+                <li> <!--Listagem de links nao ordenado-->
+                    <a href="#about">Politica de privacidade</a> <!--se nao tem o link coloca #-->
+                </li>
+        </div>
+    </footer>
+
+</body>
+</html>
